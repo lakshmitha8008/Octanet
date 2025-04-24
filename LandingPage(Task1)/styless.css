@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007BFF;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: white;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.logo h1:hover {
+    transform: scale(1.1);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ffdd57;
+}
+
+.signup a {
+    text-decoration: none;
+    background: #ffdd57;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.signup a:hover {
+    background: #ffcc00;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    animation: fadeIn 2s;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff5733; /* Bright orange */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2e00;
+    transform: scale(1.05);
+}
+
+.tours {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.destination {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    color: black;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+}
+
+.destination-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.footer {
+    text-align: center;
+    background: #007BFF;
+    padding: 20px;
+    color: white;
+}
+
+.footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.footer nav a:hover {
+    color: #ffdd57;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .tours {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.tours {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.destination {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    color: black;
+    max-width: 300px;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+}
+
+.destination-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.destination h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.destination p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.discount {
+    text-align: center;
+    background: #ffcc00;
+    padding: 50px 20px;
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.discount h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.discount p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.discount .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.discount .btn:hover {
+    background: #ff2e00;
+    transform: scale(1.05);
+}
